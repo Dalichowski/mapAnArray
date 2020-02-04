@@ -10,7 +10,7 @@ const d = ['Jean', 'Pierre', 'Paul']
 const e = ['Luc', 'Julien', 'Mathieu']
 const f = ['Paris', 'Roma', 'Barcelona']
 
-Array.prototype.mapArray2 = function(func){
+Array.prototype.mapArray = function(func){
     const res = [];   
     //Boucle pour passer la fonction à chaque élément de l'array et copier le résultat dans le nouvel array
     for(let i=0; i<this.length; i++){
@@ -39,4 +39,4 @@ function Welcome(x){
 }
 
 
-e.mapArray2(Hello)
+e.mapArray(Hello)
