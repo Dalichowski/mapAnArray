@@ -21,23 +21,6 @@ Array.prototype.mapArray2 = function(func){
     return res;
 }
 
-
-
-// Map_An_Array :    
-// Deux Arguments => Un array et une function
-function mapArray(arr, func){
-    //Array de résultat à stocker 
-    const res = [];
-    //Boucle pour passer la fonction à chaque élément de l'array et copier le résultat dans le nouvel array
-    for(let i=0; i<arr.length; i++){
-        res[i] = func(arr[i]);
-    }
-    //Montrer le résultat
-
-    return res; 
-}
-
-
 // Exemples de Fonctions à appliquer à chaque élément
 function addOne(x){
     return x + 1;
